@@ -1,6 +1,7 @@
 import React from "react";
 import UserService from "../services/UserService";
-import {Button} from 'reactstrap';
+import Button from 'react-bootstrap/Button'
+import './stylesheet/usercomponent.css';
 
 
 class UserComponent extends React.Component {
@@ -24,7 +25,7 @@ class UserComponent extends React.Component {
                 <h1 className="text-center"> CRUD CODERS </h1>
 
                 <div>
-                    <Button variant="warning"> + </Button>
+                    <Button variant="outline-dark"> Agregar alumno/a </Button>
                 </div>
                 <table className="table table-striped">
                     <thead>
@@ -58,8 +59,10 @@ class UserComponent extends React.Component {
                                     <td> {user.studentPromotion} </td>
                                     <td> {user.emailAddress}</td>
                                     <td>
-                                        <Button variant="primary"> Actualizar </Button>
-                                        <Button variant="danger"> Borrar </Button>
+                                        <div className={"table-action-buttons"}>
+                                            <Button variant="outline-dark"> Actualizar </Button>
+                                            <Button variant="outline-dark"> Eliminar </Button>
+                                        </div>
                                     </td>
                                 </tr>
                         )
@@ -71,5 +74,4 @@ class UserComponent extends React.Component {
         )
     }
 }
-
 export default UserComponent

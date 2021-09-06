@@ -1,14 +1,15 @@
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {LoginPage} from "./components/LoginPage";
+import {NavBar} from "./components/NavBar";
 import UserComponent from "./components/UserComponent";
-
 
 function App() {
   return (
    <Router>
+        <NavBar />
        <Switch>
-           <Route path="/tabla">
-                <UserComponent />
-           </Route>
+            <Route path="/iniciarsesion" component={LoginPage} />
+            <Route path="/alumnos" component={UserComponent}/>
        </Switch>
    </Router>
   );

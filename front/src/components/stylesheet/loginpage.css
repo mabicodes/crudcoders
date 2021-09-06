@@ -1,0 +1,11 @@
+.loginpage-main {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 200px 95px 0px 0px;
+    flex-wrap: wrap;
+    float: right;
+    background-color: indianred;
+    width: 50%;
+    height: 600px;
+}
