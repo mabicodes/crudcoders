@@ -1,7 +1,7 @@
 import React from "react";
 import UserService from "../services/UserService";
 import Button from 'react-bootstrap/Button'
-import './stylesheet/usercomponent.css';
+import './stylesheet/usercomponent.scss';
 
 
 class UserComponent extends React.Component {

@@ -1,0 +1,49 @@
+.root {
+  font-family: Montserrat;
+}
+.loginpage-main {
+  width: 100%;
+  background: indianred;
+  height: 890px;
+  clip-path: polygon(56% 0, 100% 0%, 100% 100%, 29% 100%);
+    .loginpage-content {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      margin: 200px 95px 0px 0px;
+      flex-wrap: wrap;
+      float: right;
+      background-color: indianred;
+      width: 50%;
+      height: 600px;
+  }
+  .form-login {
+    border: none;
+    border-radius: 10px;
+    color: indianred;
+    font-size: 20px;
+    width: 150px;
+    float: right;
+    margin-top: 30px;
+  }
+  input#user , input#password {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5px;
+      width: 250px;
+  }
+  label.loginlabel{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bolder;
+  }
+}
