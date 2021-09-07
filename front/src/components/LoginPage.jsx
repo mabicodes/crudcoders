@@ -1,17 +1,20 @@
 import React from "react";
 import "./stylesheet/loginpage.scss";
-
+import background from "./img/image1.jpg";
 
 
 
 export const LoginPage = () => {
     return (
-
+        <div className="login-jsx">
+<div className={"background-img"}>
+    <img src={background}  />
+</div>
         <div className="loginpage-main">
             <div className="loginpage-content">
                 <h1>CRUD CODERS</h1>
                     <form>
-                        <div className="form">
+                        <div className="login-form">
                             <div>
                                 <label htmlFor="user" className="loginlabel">Usuario</label>
                             </div>
@@ -22,13 +25,14 @@ export const LoginPage = () => {
                                 <label htmlFor="password" className="loginlabel">Contraseña</label>
                             </div>
                             <div>
-                                <input type="text" id="password" name="password"/>
+                                <input type="password" id="password" name="password"/>
                             </div>
+                            <button className="button-login" type="submit" > Sign in </button>
                         </div>
-                        <button className="form-login" type="submit" > Sign in </button>
                     </form>
             </div>
         </div>
+</div>
 
 
     )

@@ -6,11 +6,11 @@ import UserComponent from "./components/UserComponent";
 function App() {
   return (
    <Router>
-        <NavBar />
        <Switch>
             <Route path="/iniciarsesion" component={LoginPage} />
             <Route path="/alumnos" component={UserComponent}/>
        </Switch>
+       <NavBar />
    </Router>
   );
 }

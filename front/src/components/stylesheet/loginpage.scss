@@ -6,6 +6,8 @@
   background: indianred;
   height: 890px;
   clip-path: polygon(56% 0, 100% 0%, 100% 100%, 29% 100%);
+  position: absolute;
+  z-index: 2;
     .loginpage-content {
       display: flex;
       align-items: flex-end;
@@ -16,34 +18,55 @@
       background-color: indianred;
       width: 50%;
       height: 600px;
+
   }
-  .form-login {
+  .button-login {
     border: none;
     border-radius: 10px;
     color: indianred;
     font-size: 20px;
-    width: 150px;
-    float: right;
-    margin-top: 30px;
+    width: 250px;
+    margin: 92px 47px 2px 0px;
+    height: 60px;
   }
   input#user , input#password {
-      margin: 0;
-      font-family: inherit;
-      font-size: inherit;
-      line-height: inherit;
-      border: none;
-      border-radius: 5px;
-      margin-top: 5px;
-      width: 250px;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 350px;
+    height: 38px;
   }
   label.loginlabel{
     margin-top: 20px;
     font-size: 20px;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 65px;
     color: white;
     letter-spacing: 5px;
     font-weight: bolder;
+    margin-right: 30px;
+    cursor: default;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 150px 0px 0px;
+  }
+}
+
+.background-img {
+  img {
+    clip-path: polygon(56% 0, 0 0, 0 100%, 33% 104%);
+    height: 890px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
   }
 }
