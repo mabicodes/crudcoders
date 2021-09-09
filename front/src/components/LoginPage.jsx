@@ -12,9 +12,16 @@ export const LoginPage = () => {
 </div>
         <div className="loginpage-main">
             <div className="loginpage-content">
-                <h1>CRUD CODERS</h1>
+                <h1 className="login-crud">
+                    <span className="crud">C</span><span>reate</span>
+                    <span className="crud">R</span><span>ead</span>
+                    <span className="crud">U</span><span>pdate</span>
+                    <span className="crud">D</span><span>elete</span>
+                </h1>
+                <h1 className="login-coders">CODERS</h1>
+
                     <form>
-                        <div className="login-form">
+                    <div className="login-form">
                             <div>
                                 <label htmlFor="user" className="loginlabel">Usuario</label>
                             </div>

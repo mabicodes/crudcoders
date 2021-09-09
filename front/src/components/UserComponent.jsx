@@ -2,6 +2,8 @@ import React from "react";
 import UserService from "../services/UserService";
 import Button from 'react-bootstrap/Button'
 import './stylesheet/usercomponent.scss';
+import {FormAdd} from "./FormAdd";
+import {FormEdit} from "./FormEdit";
 
 
 class UserComponent extends React.Component {

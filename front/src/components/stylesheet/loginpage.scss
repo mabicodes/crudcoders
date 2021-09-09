@@ -1,65 +1,6 @@
 .root {
   font-family: Montserrat;
 }
-.loginpage-main {
-  width: 100%;
-  background: indianred;
-  height: 890px;
-  clip-path: polygon(56% 0, 100% 0%, 100% 100%, 29% 100%);
-  position: absolute;
-  z-index: 2;
-    .loginpage-content {
-      display: flex;
-      align-items: flex-end;
-      flex-direction: column;
-      margin: 200px 95px 0px 0px;
-      flex-wrap: wrap;
-      float: right;
-      background-color: indianred;
-      width: 50%;
-      height: 600px;
-
-  }
-  .button-login {
-    border: none;
-    border-radius: 10px;
-    color: indianred;
-    font-size: 20px;
-    width: 250px;
-    margin: 92px 47px 2px 0px;
-    height: 60px;
-  }
-  input#user , input#password {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    border: none;
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 350px;
-    height: 38px;
-  }
-  label.loginlabel{
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  h1 {
-    font-size: 65px;
-    color: white;
-    letter-spacing: 5px;
-    font-weight: bolder;
-    margin-right: 30px;
-    cursor: default;
-  }
-  .login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px 150px 0px 0px;
-  }
-}
-
 .background-img {
   img {
     clip-path: polygon(56% 0, 0 0, 0 100%, 33% 104%);
@@ -70,3 +11,97 @@
     object-fit: cover;
   }
 }
+.loginpage-main {
+  width: 100%;
+  background: #333;
+  height: 890px;
+  clip-path: polygon(44% 0, 100% 0%, 100% 100%, 29% 100%);
+  position: absolute;
+  z-index: 2;
+    .loginpage-content {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      margin: 200px 95px 0px 0px;
+      flex-wrap: wrap;
+      float: right;
+      background-color: #333;
+      width: 50%;
+      height: 600px;
+    }
+    .button-login {
+      border: none;
+      border-radius: 10px;
+      color: #333;
+      font-size: 20px;
+      width: 250px;
+      margin: 92px 47px 2px 0px;
+      height: 60px;
+      transition: 1s;
+    }
+    .button-login:hover {
+      background-color: #a1ff34;
+      color: black;
+      border: 1px solid white;
+      box-shadow: 0px 2px 6px #BBB;
+    }
+    input#user, input#password {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      border: none;
+      border-radius: 5px;
+      margin-top: 5px;
+      width: 350px;
+      height: 38px;
+    }
+    label.loginlabel {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #fff;
+    }
+    .login-coders {
+      font-size: 65px;
+      color: white;
+      letter-spacing: 5px;
+      font-weight: bolder;
+      margin-right: 30px;
+      cursor: default;
+      transition: 1s;
+    }
+    .login-coders:hover {
+      text-shadow: 0px 2px 6px #BBB;
+    }
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 50px 150px 0px 0px;
+    }
+  h1 span {
+    display: inline-flex;
+    color: #a1ff34;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  h1 span:nth-child(even){
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+    color: #fff;
+    letter-spacing: -1em ;
+  }
+  h1:hover span:nth-child(even){
+    letter-spacing: 0;
+  }
+  h1:hover span:nth-child(4){
+    transition-delay: 0.5s;
+  }
+  h1:hover span:nth-child(6){
+    transition-delay: 1s;
+  }
+  h1:hover span:nth-child(8){
+    transition-delay: 1.5s;
+  }
+}
+
