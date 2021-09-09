@@ -24,7 +24,13 @@ class UserComponent extends React.Component {
     render() {
         return (
             <div>
-                <h1 className="text-center"> CRUD CODERS </h1>
+                <h1 className="text-center">
+                    <span className="crud">C</span><span>reate</span>
+                    <span className="crud">R</span><span>ead</span>
+                    <span className="crud">U</span><span>pdate</span>
+                    <span className="crud">D</span><span>elete</span>
+                </h1>
+                <h1 className="h1coders">CODERS</h1>
 
                 <div>
                     <Button variant="outline-dark"> Agregar alumno/a </Button>
