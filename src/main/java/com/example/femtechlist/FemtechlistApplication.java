@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class FemtechlistApplication implements CommandLineRunner {
 
+
     public static void main(String[] args) {
         SpringApplication.run(FemtechlistApplication.class, args);
     }
@@ -19,16 +20,17 @@ public class FemtechlistApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-
-
     }
 }
+
+/*
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+ */
