@@ -8,7 +8,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private long id;
+    private Long id;
     @Column(name = "student_name")
     private String studentName;
     @Column(name = "student_surname")
@@ -26,10 +26,6 @@ public class User {
     @Column (name ="email_address")
     private String emailAddress;
 
-    public User() {
-
-    }
-
     public User(String studentName, String studentSurname, String studentAge, String countryOrigin, String educationalLevel, String studentAddress, String studentPromotion, String emailAddress) {
         this.studentName = studentName;
         this.studentSurname = studentSurname;
@@ -41,11 +37,14 @@ public class User {
         this.emailAddress =  emailAddress;
     }
 
-    public long getId() {
-        return id;
+
+    public User() {
     }
 
-    public void setId(long id) {
+
+    public Long getId() { return id; }
+
+    public void setId(Long id) {
         this.id = id;
     }
 

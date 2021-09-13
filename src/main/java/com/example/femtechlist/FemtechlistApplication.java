@@ -19,18 +19,16 @@ public class FemtechlistApplication implements CommandLineRunner {
     private UserRepository userRepository;
     @Override
     public void run(String... args) throws Exception {
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
+        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
 
     }
 }
 
-/*
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
-        this.userRepository.save(new User("Nicole","Flores", "22" , "España", "ESO", "Carrer Valencia, 34 Barcelona" , "Femtech" , "nanisore@gmail.com"));
- */
