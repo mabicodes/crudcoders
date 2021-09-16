@@ -7,10 +7,10 @@ export const NavBar = () => {
 
             <div>
                 <button>
-                    <Link to="/iniciarsesion"> Inicio Sesión </Link>
+                    <Link to="/iniciarsesion" target="_blank"> Inicio Sesión </Link>
                 </button>
                 <button>
-                    <Link to="/alumnos"> Tabla de alumnos </Link>
+                    <Link to="/alumnos" target="_blank"> Tabla de alumnos </Link>
                 </button>
             </div>
 
