@@ -2,11 +2,11 @@ import React from "react";
 import "./stylesheet/loginpage.scss";
 import background from "./img/image1.jpg";
 import IconButton from "@material-ui/core/IconButton";
-import InputLabel from "@material-ui/core/InputLabel";
 import Visibility from "@material-ui/icons/Visibility";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Input from "@material-ui/core/Input";
+import { useHistory } from 'react-router-dom';
 
 
 export const LoginPage = () => {
@@ -27,6 +27,8 @@ export const LoginPage = () => {
     const handlePasswordChange = (prop) => (event) => {
         setValues({ ...values, [prop]: event.target.value });
     };
+
+    const history = useHistory();
 
     return (
             <div className="login-jsx">
@@ -71,7 +73,7 @@ export const LoginPage = () => {
                                                     />
                                                 </div>
 
-                                        <button className="button-login" type="submit" > Sign in </button>
+                                        <button className="button-login" type="submit" onClick={()=> history.push("/alumnos")} > Sign in </button>
                                     </div>
 
                                 </form>

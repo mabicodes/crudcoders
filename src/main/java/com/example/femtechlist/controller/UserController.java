@@ -4,21 +4,26 @@ import java.util.List;
 import com.example.femtechlist.model.User;
 import com.example.femtechlist.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/users")
 @CrossOrigin
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/{id}")
+
+    @GetMapping("/users")
     public List<User> getUsers() {
-        return this.userRepository.findAll();
+        return userRepository.findAll();
+    }
+    @GetMapping("/users/{studentPromotion}")
+    public List<User> getUsersByProm(@PathVariable String studentPromotion){
+        return userRepository.findByStudentPromotion(studentPromotion);
     }
 
     @PostMapping("/users")
@@ -34,3 +39,21 @@ public class UserController {
 
 }
 
+/*  TRY 2
+
+    @PutMapping("/{id}")
+    public ResponseEntity updateUser(@PathVariable Long id, @RequestBody User user)
+        User currentUser= userRepository.findById(id).orElseThrow(RuntimeException::new);
+            currentUser.setName(user.getName());
+        currentUser.setEmail(user.getEmail());
+    currentUser = userRepository.save(user);
+
+        return ResponseEntity.ok(userClient);
+    }
+   @PostMapping("/save")
+    public String saveUser(@RequestBody User user){
+    userRepository.save(user);
+    return "Guardado";
+    }
+
+*/

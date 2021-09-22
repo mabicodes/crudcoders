@@ -1,5 +1,6 @@
 package com.example.femtechlist.model;
 
+
 import javax.persistence.*;
 
 @Entity

@@ -16,13 +16,18 @@ class UserComponent extends React.Component {
     }
 
     componentDidMount() {
-        UserService.getUsers().then((response) => {
-            console.log(response.data)
-            this.setState({users: response.data})
+        fetch('/users') .then(response => response.json())
+            .then(data => this.setState({users: data}));
+
+            UserService.getUsers().then((response) => {
+                console.log(response.data)
+                this.setState({users: response.data})
         });
     }
 
+
     render() {
+
         return (
             <div>
                 <h1 className="text-center">
