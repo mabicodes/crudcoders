@@ -47,7 +47,7 @@ export const LoginPage = () => {
                                 <form>
                                     <div className="login-form">
                                                 <div>
-                                                    <label htmlFor="user" className="loginlabel">Usuario</label>
+                                                    <label htmlFor="user" className="loginlabel"  required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">Correo Eléctronico</label>
                                                 </div>
                                                 <div>
                                                     <input type="text" id="user" name="user" />
@@ -70,6 +70,8 @@ export const LoginPage = () => {
                                                                 </IconButton>
                                                             </InputAdornment>
                                                         }
+                                                        pattern="[A-Za-z0-9-]{8,12}"
+                                                        required
                                                     />
                                                 </div>
 

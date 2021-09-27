@@ -30,3 +30,14 @@ h1:hover span:nth-child(6){
 h1:hover span:nth-child(8){
   transition-delay: 1.5s;
 }
+
+.motherdiv {
+  margin: 50px 2px;
+  padding: 2px;
+
+  button.agregar.btn.btn-outline-dark{
+    float: right;
+    margin: 5px 70px 4px 0px;
+  }
+
+}

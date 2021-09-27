@@ -16,8 +16,6 @@ public class CrudlistApplication {
             SpringApplication.run(CrudlistApplication.class, args);
         UserRepository userRepository =
                 configurableApplicationContext.getBean(UserRepository.class);
-        User student = new User("Jonathan","Joestar","22","Italia","JoJo","Mafia da Sicilia","Series","JoJo@Joestar");
-        userRepository.save(student);
     }
 }
 
